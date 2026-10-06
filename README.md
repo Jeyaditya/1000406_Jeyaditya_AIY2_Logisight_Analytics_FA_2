@@ -469,7 +469,7 @@ $$
 
 
 $$
-d=R\c
+d=Rc
 $$
 
 Distances greater than **500 km** are treated as anomalous GPS-derived values and converted to `NaN`.
