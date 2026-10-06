@@ -467,14 +467,9 @@ a=
 \sin^2\left(\frac{\Delta\lambda}{2}\right)
 $$
 
-$$
-c=
-2\operatorname{atan2}
-(\sqrt a,\sqrt{1-a})
-$$
 
 $$
-d=R\,c
+d=R\c
 $$
 
 Distances greater than **500 km** are treated as anomalous GPS-derived values and converted to `NaN`.
