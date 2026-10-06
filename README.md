@@ -315,16 +315,6 @@ Allows dispatch volume and delivery latency to be compared throughout the day.
 
 **Area × Traffic → Late-Delivery Rate**
 
-The dashboard calculates:
-
-$$
-\text{Late Rate}
-=
-\frac{\text{Late Orders}}
-{\text{Total Orders}}
-\times100
-$$
-
 The resulting matrix highlights area/traffic combinations with comparatively higher proportions of late records.
 
 > The term **SLA** here refers to the dashboard's statistical late classification, not an externally defined contractual SLA.
