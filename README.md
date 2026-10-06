@@ -53,29 +53,7 @@ Instead of presenting isolated charts, the dashboard allows users to **filter, c
 | 2D analytical visualizations      |         **10** |
 | Interactive 3D visualizations     |          **2** |
 
-### 📐 Statistical Late Boundary
 
-LogiSight defines an analytical late boundary using:
-
-$$
-\tau_{\text{late}} = \mu + \sigma
-$$
-
-For the complete dataset:
-
-$$
-\tau_{\text{late}}
-=
-124.91 + 51.92
-=
-\mathbf{176.82\ minutes}
-$$
-
-Records exceeding this value are classified as `Is_Late = 1`.
-
-> **Note:** This is a statistical analytical boundary created by the application. It is **not a customer-promised SLA** from the source dataset.
-
----
 
 # 🧭 Dashboard Architecture
 
@@ -160,21 +138,6 @@ Average agent rating while preserving the dataset's observed `1.0–6.0` scale.
 
 The Delay Analyzer compares average delivery time across combinations of weather and traffic conditions.
 
-The underlying statistic is the conditional expectation:
-
-$$
-E[X\mid W=w,T=t]
-=
-\frac{1}{|S_{w,t}|}
-\sum_{i\in S_{w,t}}x_i
-$$
-
-Where:
-
-* \(X\) = delivery time
-* \(W\) = weather
-* \(T\) = traffic
-* \(S_{w,t}\) = records matching the selected conditions
 
 ### Why it matters
 
